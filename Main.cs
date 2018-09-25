@@ -58,7 +58,7 @@ namespace Absolutly
             {
                 _isInfoMenuActive = !_isInfoMenuActive;
             }
-            if (_modeDieu)
+            if (_godMode)
             {
                 GodMode();
             }
@@ -331,7 +331,7 @@ namespace Absolutly
 
             _showPlayersInfo = GUI.Toggle(new Rect(110f, 140f, 120f, 20f), _showPlayersInfo, "Joueurs");
             _showExtractInfo = GUI.Toggle(new Rect(110f, 160f, 120f, 20f), _showExtractInfo, "Evasion");
-            _modeDieu = GUI.Toggle(new Rect(110f, 180f, 120f, 20f), _modeDieu, "Mode dieu");
+            _godMode = GUI.Toggle(new Rect(110f, 180f, 120f, 20f), _godMode, "God mode");
             _maxVueDistance = float.Parse(GUI.TextField(new Rect(110f, 200f, 120f, 20f), _maxVueDistance.ToString(), 10, "Distance"));
 
         }
